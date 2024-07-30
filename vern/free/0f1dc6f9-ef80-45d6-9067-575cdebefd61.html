@@ -1,0 +1,27 @@
+<title>То, чем я сейчас так занят...</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<body background="bg.jpg" link="white" vlink="white" alink="yellow">
+<font color="white">
+<center>
+12 июл 2022 в 23:37
+<h1>То, чем я сейчас так занят...</h1>
+
+<video id="video" width="100%" controls></video>
+<script>
+const videoSegments = [
+'2/partik0.mp4'
+];
+const videoElement = document.getElementById('video');
+let currentSegment = 0;
+function loadNextSegment() {
+videoElement.src = videoSegments[currentSegment];
+videoElement.play();
+currentSegment++;
+}
+videoElement.addEventListener('ended', loadNextSegment);
+loadNextSegment();
+</script>
+
+<h1><a href="javascript:history.back()">НАЗАД</a><br><br>
+<font color="white" size="3">
+©2024 premium-televizor.net - ВСЕ ПРАВА ЗАЩИЩЕНЫ

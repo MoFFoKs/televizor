@@ -1,0 +1,52 @@
+<title>Новые и старые коллабы черри :)</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<body background="bg.jpg" link="white" vlink="white" alink="yellow">
+<font color="white">
+<center>
+02 июл 2022 в 20:38
+<h1>Новые и старые коллабы черри :)</h1>
+
+<video id="video" width="100%" controls></video>
+<script>
+const videoSegments = [
+'1/partik0.mp4',
+'1/partik1.mp4',
+'1/partik2.mp4',
+'1/partik3.mp4',
+'1/partik4.mp4',
+'1/partik5.mp4',
+'1/partik6.mp4',
+'1/partik7.mp4',
+'1/partik8.mp4',
+'1/partik9.mp4',
+'1/partik10.mp4',
+'1/partik11.mp4',
+'1/partik12.mp4',
+'1/partik13.mp4',
+'1/partik14.mp4',
+'1/partik15.mp4',
+'1/partik16.mp4',
+'1/partik17.mp4',
+'1/partik18.mp4',
+'1/partik19.mp4',
+'1/partik20.mp4',
+'1/partik21.mp4',
+'1/partik22.mp4',
+'1/partik23.mp4',
+'1/partik24.mp4',
+'1/partik25.mp4'
+];
+const videoElement = document.getElementById('video');
+let currentSegment = 0;
+function loadNextSegment() {
+videoElement.src = videoSegments[currentSegment];
+videoElement.play();
+currentSegment++;
+}
+videoElement.addEventListener('ended', loadNextSegment);
+loadNextSegment();
+</script>
+
+<h1><a href="javascript:history.back()">НАЗАД</a><br><br>
+<font color="white" size="3">
+©2024 premium-televizor.net - ВСЕ ПРАВА ЗАЩИЩЕНЫ
