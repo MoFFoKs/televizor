@@ -1,0 +1,41 @@
+<title>ТИЛЬТ ИЗ НОВОГО ВИДЕО</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<body background="bg.jpg" link="white" vlink="white" alink="yellow">
+<font color="white">
+<center>
+21 фев 2023 в 16:15
+<h1>ТИЛЬТ ИЗ НОВОГО ВИДЕО</h1>
+
+<video id="video" width="100%" controls></video>
+<script>
+const videoSegments = [
+'3/partik0.mp4',
+'3/partik1.mp4',
+'3/partik2.mp4',
+'3/partik3.mp4',
+'3/partik4.mp4',
+'3/partik5.mp4',
+'3/partik6.mp4',
+'3/partik7.mp4',
+'3/partik8.mp4',
+'3/partik9.mp4',
+'3/partik10.mp4',
+'3/partik11.mp4',
+'3/partik12.mp4',
+'3/partik13.mp4',
+'3/partik14.mp4'
+];
+const videoElement = document.getElementById('video');
+let currentSegment = 0;
+function loadNextSegment() {
+videoElement.src = videoSegments[currentSegment];
+videoElement.play();
+currentSegment++;
+}
+videoElement.addEventListener('ended', loadNextSegment);
+loadNextSegment();
+</script>
+
+<h1><a href="javascript:history.back()">НАЗАД</a><br><br>
+<font color="white" size="3">
+©2024 premium-televizor.net - ВСЕ ПРАВА ЗАЩИЩЕНЫ

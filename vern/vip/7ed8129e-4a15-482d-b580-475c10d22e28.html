@@ -1,0 +1,46 @@
+<title>Swing Maestro — первый полноценный 2.2 ГП от черри</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<body background="bg.jpg" link="white" vlink="white" alink="yellow">
+<font color="white">
+<center>
+11 янв 2024 в 01:04
+<h1>Swing Maestro — первый полноценный 2.2 ГП от черри</h1>
+Сорри, что такой простой видос, не было времени вообще сегодня<br><br>
+Ласт парт сломан, но концепт крутой<br><br>
+<video id="video" width="100%" controls></video>
+<script>
+const videoSegments = [
+'34/partik0.mp4',
+'34/partik1.mp4',
+'34/partik2.mp4',
+'34/partik3.mp4',
+'34/partik4.mp4',
+'34/partik5.mp4',
+'34/partik6.mp4',
+'34/partik7.mp4',
+'34/partik8.mp4',
+'34/partik9.mp4',
+'34/partik10.mp4',
+'34/partik11.mp4',
+'34/partik12.mp4',
+'34/partik13.mp4',
+'34/partik14.mp4',
+'34/partik15.mp4',
+'34/partik16.mp4',
+'34/partik17.mp4',
+'34/partik18.mp4'
+];
+const videoElement = document.getElementById('video');
+let currentSegment = 0;
+function loadNextSegment() {
+videoElement.src = videoSegments[currentSegment];
+videoElement.play();
+currentSegment++;
+}
+videoElement.addEventListener('ended', loadNextSegment);
+loadNextSegment();
+</script>
+
+<h1><a href="javascript:history.back()">НАЗАД</a><br><br>
+<font color="white" size="3">
+©2024 premium-televizor.net - ВСЕ ПРАВА ЗАЩИЩЕНЫ

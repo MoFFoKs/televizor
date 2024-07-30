@@ -1,0 +1,50 @@
+<title>ПЕНУМБРА ГОТОВА</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
+<body background="bg.jpg" link="white" vlink="white" alink="yellow">
+<font color="white">
+<center>
+18 авг 2023 в 07:55
+<h1>ПЕНУМБРА ГОТОВА</h1>
+
+<video id="video" width="100%" controls></video>
+<script>
+const videoSegments = [
+'29/partik0.mp4',
+'29/partik1.mp4',
+'29/partik2.mp4',
+'29/partik3.mp4',
+'29/partik4.mp4',
+'29/partik5.mp4',
+'29/partik6.mp4',
+'29/partik7.mp4',
+'29/partik8.mp4',
+'29/partik9.mp4',
+'29/partik10.mp4',
+'29/partik11.mp4',
+'29/partik12.mp4',
+'29/partik13.mp4',
+'29/partik14.mp4',
+'29/partik15.mp4',
+'29/partik16.mp4',
+'29/partik17.mp4',
+'29/partik18.mp4',
+'29/partik19.mp4',
+'29/partik20.mp4',
+'29/partik21.mp4',
+'29/partik22.mp4',
+'29/partik23.mp4'
+];
+const videoElement = document.getElementById('video');
+let currentSegment = 0;
+function loadNextSegment() {
+videoElement.src = videoSegments[currentSegment];
+videoElement.play();
+currentSegment++;
+}
+videoElement.addEventListener('ended', loadNextSegment);
+loadNextSegment();
+</script>
+
+<h1><a href="javascript:history.back()">НАЗАД</a><br><br>
+<font color="white" size="3">
+©2024 premium-televizor.net - ВСЕ ПРАВА ЗАЩИЩЕНЫ
